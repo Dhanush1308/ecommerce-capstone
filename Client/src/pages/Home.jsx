@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../api/productApi";
+import API from "../services/api";
 import ProductCard from "../Components/ProductCard";
 import SearchBar from "../Components/SearchBar";
 
