@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../services/api";
-import ProductCard from "../components/ProductCard";
-import SearchBar from "../components/SearchBar";
+import ProductCard from "../Components/ProductCard";
+import SearchBar from "../Components/SearchBar";
 
 function Products() {
 
