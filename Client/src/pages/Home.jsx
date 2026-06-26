@@ -32,6 +32,9 @@ function Home() {
   return (
     <div className="container">
       <h1>Welcome to ShopEasy</h1>
+      <h1 style={{ color: "red" }}>
+        THIS IS THE NEW VERSION
+      </h1>
 
       <SearchBar
         search={search}
