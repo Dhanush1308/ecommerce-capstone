@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import API from "../api/productApi";
-import ProductCard from "../../../Client/src/Components/ProductCard";
-import SearchBar from "../../../Client/src/Components/SearchBar";
+import ProductCard from "../Components/ProductCard";
+import SearchBar from "../Components/SearchBar";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -13,10 +13,15 @@ function Home() {
 
   const fetchProducts = async () => {
     try {
+      console.log("Fetching products...");
+
       const res = await API.get("/products");
+
+      console.log("Response:", res.data);
+
       setProducts(res.data);
     } catch (err) {
-      console.error(err);
+      console.error("API Error:", err);
     }
   };
 
